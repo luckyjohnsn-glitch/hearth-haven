@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#F6F2EE">
+        <title>{{ page_title }} — {{ shop.name }}</title>
+        {{ content_for_header }}
+        <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
+    </head>
+
+    <body class="theme-body">
+    {% section 'header' %}
+
+
+        <main id="MainContent" role="main">
+            {{ content_for_layout }}
+        </main>
+
+
+        {% section 'footer' %}
+
+
+        {{ content_for_footer }}
+    </body>
+</html>

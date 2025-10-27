@@ -1,0 +1,26 @@
+{% schema %}
+{
+    "name":"Featured collection",
+    "settings":[
+        {"type":"collection","id":"collection","label":"Collection","default":"frontpage"},
+        {"type":"text","id":"title","label":"Title","default":"Featured"}
+    ]
+}
+{% endschema %}
+
+
+<section class="featured-collection wrap">
+    <h2>{{ section.settings.title }}</h2>
+    <div class="grid">
+        {% assign products = collections[section.settings.collection].products | slice: 0,8 %}
+        {% for product in products %}
+            <article class="product-card">
+                <a href="{{ product.url }}">
+                    <img src="{{ product.featured_image | img_url: '480x480' }}" alt="{{ product.title }}">
+                    <h3>{{ product.title }}</h3>
+                    <div class="price">{{ product.price | money }}</div>
+                </a>
+            </article>
+        {% endfor %}
+    </div>
+</section>

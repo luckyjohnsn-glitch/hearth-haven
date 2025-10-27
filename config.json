@@ -1,0 +1,11 @@
+[
+    {
+        "name": "Theme",
+        "settings": [
+            {"type":"text","id":"brand_name","label":"Brand name","default":"Hearth & Haven"},
+            {"type":"color","id":"accent_color","label":"Accent color","default":"#CFAF9E"},
+            {"type":"color","id":"bg_color","label":"Background color","default":"#F6F2EE"},
+            {"type":"color","id":"text_color","label":"Text color","default":"#222222"}
+        ]
+    }
+]

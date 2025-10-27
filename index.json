@@ -1,0 +1,9 @@
+{
+    "sections": {
+        "hero": {"type": "hero","settings": {"heading": "Calm at Home","subheading":"Curated candles & pet comforts","image": ""}},
+        "featured_collection": {"type": "featured-collection","settings":{"collection":"frontpage","title":"Featured for Home"}},
+        "text_with_image": {"type":"text-with-image","settings":{"heading":"Designed for daily comfort","text":"Small rituals, big difference."}}
+    },
+    "order": ["hero","featured_collection","text_with_image"],
+    "content_for_index": ""
+}
